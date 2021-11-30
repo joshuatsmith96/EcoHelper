@@ -8,12 +8,15 @@ const SkillTile = (props) => {
     const description = props.description;
     const ImageSrc = props.ImageSrc;
     const display = props.display;
+    const Recipes = props.Recipes;
+
 
     return(
         <div className="SkillTile">
             <h2>{header}</h2>
             <img style={{display: display}}src={ImageSrc} />
             <p>{description}</p>
+            <RecipeTile Recipes={Recipes}/>
         </div>
     )
 }

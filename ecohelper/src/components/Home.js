@@ -2,16 +2,19 @@ import React, { useState } from 'react';
 import SkillTile from './SkillTile';
 import './styles.css';
 
+
 const Home = (props) => {
 
     const Skills = props.Skills;
     const Descriptions = props.Descriptions;
     const ImageSrc = props.ImageSrc;
+    const Recipes = props.Recipes;
 
     const [description, setDescription] = useState("Click on the buttons above to view the different skills.");
     const [header, setHeader] = useState("Welcome to the Eco description and skill recipes application!");
     const [image, setImage] = useState();
     const [display, setDisplay] = useState("none");
+    const [recipeList, setRecipeList] = useState("");
 
     function clickHandler(e){
         const id = e.target.value - 1
@@ -20,6 +23,8 @@ const Home = (props) => {
         setDescription(Descriptions[id])
         setImage(ImageSrc[id].photo)
         setDisplay("block");
+        setRecipeList(Recipes[id]);
+        console.log(Recipes[id]);
     }
 
     return(
@@ -31,7 +36,7 @@ const Home = (props) => {
                 <button onClick={clickHandler} value={3}>Engineering</button>
                 <button onClick={clickHandler} value={4}>Campfire Cooking</button>
             </div>
-            <SkillTile header={header} description={description} ImageSrc={image} display={display}/>
+            <SkillTile header={header} description={description} ImageSrc={image} display={display} Recipes={recipeList}/>
         </div>
     )
 }

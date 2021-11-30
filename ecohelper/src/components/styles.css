@@ -32,6 +32,10 @@
     font-family: 'Outfit', sans-serif;
 }
 
+.Home h3{
+    font-family: 'Outfit', sans-serif;
+}
+
 .Home p{
     font-family: 'Outfit', sans-serif;
 }
@@ -66,4 +70,22 @@ img{
 .SkillTile p{
     width: 50%;
     font-size: 18px;
+}
+
+.RecipeTile{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.RecipeTile h2{
+    margin-bottom: 30px;
+}
+
+.RecipeTile img{
+    width: 60%;
+    height: 60%;
+    margin-bottom: 20px;
 }
