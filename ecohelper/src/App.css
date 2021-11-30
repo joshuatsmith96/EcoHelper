@@ -1,0 +1,22 @@
+.bg_image{
+    background-image: url('./components/Images/EcoBackground.png');
+    width: 100%;
+    height: 100%;
+    color: black;
+    position: absolute;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+.HomeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
