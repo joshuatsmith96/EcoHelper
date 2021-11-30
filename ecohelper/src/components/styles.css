@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+/*font-family: 'Outfit', sans-serif;*/
+
 .Home{
     display: flex;
     flex-direction: column;
@@ -16,13 +19,21 @@
     padding: 10px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: rgb(231, 246, 252);
+    background-color: rgb(240, 240, 240);
     box-shadow: 1px 1px 5px 1px;
     margin-bottom: 20px;
+    font-family: 'Outfit', sans-serif;
+    color: rgb(1, 102, 133);
+    border-color: black;
 }
 
 .Home h2{
     font-size: 30px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.Home p{
+    font-family: 'Outfit', sans-serif;
 }
 
 .Home button{
@@ -31,9 +42,28 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 3px 1px;
+    color: black;
+}
+
+.Home button:hover{
+    color: rgb(1, 102, 133);
+    cursor: pointer;
 }
 
 img{
     width: 100px;
     height: 100px;
+}
+
+.SkillTile{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SkillTile p{
+    width: 50%;
+    font-size: 18px;
 }
