@@ -25,11 +25,13 @@ function App() {
 
   const CarpentryRecipes = [
     {
+      id: "FE" + new Date().getTime(),
       Name: "Butchery Table",
       Description: "Butchery tables are crafting tables used by Butchers and Hunters. It is used to process and harvest animals.",
       Photo: null
     },
     {
+      id: "FE" + new Date().getTime()+1,
       Name: "Hewn Chair",
       Description: "To sit on?",
       Photo: HewnChair
@@ -38,11 +40,13 @@ function App() {
 
   const MasonryRecipes = [
     {
+      id: "FE" + new Date().getTime(),
       Name: "Mortared Stone",
       Description: "This and that",
       Photo: null
     },
     {
+      id: "FE" + new Date().getTime()+1,
       Name: "Kiln",
       Description: "To smelt things?",
       Photo: null
@@ -51,19 +55,39 @@ function App() {
 
   const EngineeringRecipes = [
     {
+      id: "FE" + new Date().getTime(),
       Name: "Stone Road Tool",
       Description: "To Make Roads",
+      Photo: null
     },
     {
+      id: "FE" + new Date().getTime()+1,
       Name: "Wind Mill",
-      Description: "For Power."
+      Description: "For Power.",
+      Photo: null
+    }
+  ]
+
+  const CampfireCookingRecipes = [
+    {
+      id: "FE" + new Date().getTime(),
+      Name: "Salad",
+      Description: "Some delicious edible (maybe) leaves.",
+      Photo: null
+    },
+    {
+      id: "FE" + new Date().getTime()+1,
+      Name: "Burger",
+      Description: "Delicious burger that isn't really even in the game. Just some dummy text.",
+      Photo: null
     }
   ]
 
   const Recipes = [{
     "1": CarpentryRecipes,
     "2": MasonryRecipes,
-    "3": EngineeringRecipes
+    "3": EngineeringRecipes,
+    "4": CampfireCookingRecipes
   }];
 
   const ImageSrc = [

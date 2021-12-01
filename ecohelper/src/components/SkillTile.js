@@ -10,19 +10,12 @@ const SkillTile = (props) => {
     const display = props.display;
     const Recipes = props.Recipes;
 
-
-    function Practice(){
-        console.log(Recipes);
-    }
-
-
     return(
         <div className="SkillTile">
             <h2>{header}</h2>
             <img style={{display: display}}src={ImageSrc} />
-            <p>{description}</p>
+            <p className="SkillTileP">{description}</p>
             <RecipeTile Recipes={Recipes}/>
-            <button onClick={Practice}>SkillTilePractice</button>
         </div>
     )
 }

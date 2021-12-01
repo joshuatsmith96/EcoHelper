@@ -13,8 +13,6 @@ const RecipeTile = (props) => {
                 return(
                     <div className="MappedRecipes">
                         <h2>{Recipe.Name}</h2>
-                        <img src={Recipe.Photo} />
-                        <h3>Description</h3>
                         <p>{Recipe.Description}</p>
                     </div>
                 )
