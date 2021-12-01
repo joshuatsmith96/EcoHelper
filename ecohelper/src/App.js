@@ -26,7 +26,7 @@ function App() {
   const CarpentryRecipes = [
     {
       Name: "Butchery Table",
-      Description: "This and that",
+      Description: "Butchery tables are crafting tables used by Butchers and Hunters. It is used to process and harvest animals.",
       Photo: null
     },
     {
@@ -60,11 +60,11 @@ function App() {
     }
   ]
 
-  const Recipes = [
-    CarpentryRecipes,
-    MasonryRecipes,
-    EngineeringRecipes
-  ]
+  const Recipes = [{
+    "1": CarpentryRecipes,
+    "2": MasonryRecipes,
+    "3": EngineeringRecipes
+  }];
 
   const ImageSrc = [
     {

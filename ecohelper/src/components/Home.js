@@ -14,7 +14,7 @@ const Home = (props) => {
     const [header, setHeader] = useState("Welcome to the Eco description and skill recipes application!");
     const [image, setImage] = useState();
     const [display, setDisplay] = useState("none");
-    const [recipeList, setRecipeList] = useState("");
+    const [recipe, setRecipe] = useState();
 
     function clickHandler(e){
         const id = e.target.value - 1
@@ -23,8 +23,7 @@ const Home = (props) => {
         setDescription(Descriptions[id])
         setImage(ImageSrc[id].photo)
         setDisplay("block");
-        setRecipeList(Recipes[id]);
-        console.log(Recipes[id]);
+        setRecipe(Recipes[0][id+1])
     }
 
     return(
@@ -35,8 +34,9 @@ const Home = (props) => {
                 <button onClick={clickHandler} value={2}>Masonry</button>
                 <button onClick={clickHandler} value={3}>Engineering</button>
                 <button onClick={clickHandler} value={4}>Campfire Cooking</button>
+                <p></p>
             </div>
-            <SkillTile header={header} description={description} ImageSrc={image} display={display} Recipes={recipeList}/>
+            <SkillTile header={header} description={description} ImageSrc={image} display={display} Recipes={recipe}/>
         </div>
     )
 }

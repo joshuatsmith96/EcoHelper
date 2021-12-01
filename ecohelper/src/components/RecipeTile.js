@@ -4,20 +4,17 @@ import './styles.css';
 
 
 const RecipeTile = (props) => {
-    const Recipes = props.Recipes;
 
-    function Practice() {
-        console.log(Recipes[1]);
-    }
+    const Recipes = props.Recipes;
+    const Name = Recipes[0].Name;
+    const Description = Recipes[0].Description;
 
     return(
         <div className="RecipeTile">
             <h2>Crafting Recipes</h2>
-            <h3>{Recipes[1].Name}</h3>
-            <img src={Recipes[1].Photo} />
+            <h3>{Name}</h3>
             <h3>Description</h3>
-            <p>{Recipes[1].Description}</p>
-            <button onClick={Practice}>Practice</button>
+            <p>{Description}</p>
         </div>
     )
 }
