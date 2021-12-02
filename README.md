@@ -6,5 +6,5 @@ EcoHelper is a tool created for a game called "Eco". It is a work in progress, b
 
 # How it was built
 
-# - EcoHelper was built using the React framework, and a variety of object arrays that correspond to specific indexes.
-# - Current version is incomplete, but just a proof of concept. The functionality is there, the styling is not quite there.
+- EcoHelper was built using the React framework, and a variety of object arrays that correspond to specific indexes.
+- Current version is incomplete, but just a proof of concept. The functionality is there, the styling is not quite there.
