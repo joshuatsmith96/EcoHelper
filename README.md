@@ -1,7 +1,7 @@
 # Version 1 - 12/2/2021
 
 # What is EcoHelper
-# EcoHelper is a tool created for a game called "Eco". It is a work in progress, but the ultimate goal is for this to be a one-stop shop for guides, crafting recipes, and tips.
+EcoHelper is a tool created for a game called "Eco". It is a work in progress, but the ultimate goal is for this to be a one-stop shop for guides, crafting recipes, and tips.
 
 
 # How it was built
