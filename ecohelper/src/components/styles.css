@@ -68,7 +68,7 @@ img{
 }
 
 .SkillTile p{
-    width: 80%;
+    width: 50%;
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -85,20 +85,45 @@ img{
     margin-bottom: 30px;
 }
 
-.RecipeTile img{
-    width: 60%;
-    height: 60%;
-    margin-bottom: 20px;
-}
-
 .MappedRecipes{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.MappedRecipes h2{
+    margin-top: 50px;
+}
+
+.recipeIcon{
+    
+}
+
+.recipeImage{
+    width: 250px;
+    height: 20%;
 }
 
 .SkillTileP{
     border-bottom: solid;
     padding-bottom: 20px;
+}
+
+.MappedRecipes h3{
+    margin-top: 20px;
+}
+
+.buttonContainer{
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(58, 189, 218, 0), rgb(89, 216, 245), rgba(58, 189, 218, 0));
+    padding: 8px;
+}
+
+/* MOBILE */
+@media all and (max-width: 793px) {
+    .SkillTile p{
+        width: 80%;
+    }
 }

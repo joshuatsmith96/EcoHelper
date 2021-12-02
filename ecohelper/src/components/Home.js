@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SkillTile from './SkillTile';
 import './styles.css';
+import MainImage from './Images/recipe_icons/Carpentry/Level1/main_image.png';
 
 
 const Home = (props) => {
@@ -13,8 +14,10 @@ const Home = (props) => {
     const homeDescription = [
         {
             id: "FE" + new Date().getTime(),
-            Name: "",
-            Description: ""
+            Name: "What is Eco?",
+            Description: "Eco is a community-based game; the players develop laws, government, and an economy to determine the success of their world.",
+            Icon: MainImage,
+            RecipeImage: null
         }
     ]
 
@@ -39,7 +42,7 @@ const Home = (props) => {
     return(
         <div className="Home">
             <h1>Eco Descriptions and Skill Recipes</h1>
-            <div>
+            <div className="buttonContainer">
                 <button onClick={clickHandler} value={1}>Carpentry</button>
                 <button onClick={clickHandler} value={2}>Masonry</button>
                 <button onClick={clickHandler} value={3}>Engineering</button>
